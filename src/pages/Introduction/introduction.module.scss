@@ -1,0 +1,33 @@
+.container {
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  .wrapper {
+    margin-top: 24px;
+    color: #004835;;
+    .title {
+      height: 42px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 100%;
+      background-color: rgb(51, 167, 181);
+      color: white;
+    }
+    .content {
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-top: 16px;
+      background-color: #f1f1f1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 30px;
+    }
+  }
+}
+.hr {
+  border: 0.5px solid #373737;
+  opacity: 0.2;
+  width: 1280px;
+}
