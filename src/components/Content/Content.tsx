@@ -1,37 +1,37 @@
 import styles from "./content.module.scss";
+import SpaOutlinedIcon from "@mui/icons-material/SpaOutlined";
+import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
 import { data } from "./data";
 
-const Content = () => {
+export const Content = () => {
   return (
     <div className={styles["container"]}>
-      <div className={styles["paragraph"]}>
-        <h1>SKY LAND</h1>
-        <span>Kính chào toàn thể quý khách hàng</span>
-        <span>
-          Được thành lập với đội ngủ trẻ, nhiệt huyết năng động. Sky Land tự hào
-          mang đến cho quý khách hàng các dự án bất động sản chất lượng và tiềm
-          năng đầu tư lâu dài.
-        </span>
-        <span>
-          Với phương châm chất lượng, bền vững và hợp tác có lợi đôi bên, Sky
-          Land không ngừng nỗ lực để phấn đấu làm nơi tin cậy cho quý khách hàng
-          tin tưởng và giao dịch
-        </span>
-        <h2>DỰ ÁN ĐANG PHÂN PHỐI</h2>
+      <h2>THÔNG TIN CÁC DỰ ÁN SKY LAND PHÂN PHỐI</h2>
+      <div className={styles["line"]}>
+        <div className={styles["hr"]}></div>
+        <SpaOutlinedIcon style={{ color: "#f5ab00" }} />
         <div className={styles["hr"]}></div>
       </div>
-      <div className={styles["content"]}>
+      <div className={styles["itemWrapper"]}>
         {data.map((item) => (
-          <div className={styles["items"]} key={item.id}>
-            <div className={styles["imgWrapper"]}>
-              <img
-                src={item.thumbnailImg}
-                alt={item.title}
-              />
+          <div className={styles["item"]}>
+            <img src={item.thumbnailImg} alt="" />
+            <div className={styles["previewContent"]}>
+              <h3 style={{ fontSize: 22 }}>{item.title.toUpperCase()}</h3>
+              <p
+                style={{
+                  marginLeft: 5,
+                  marginRight: 5,
+                  lineHeight: "1.5rem",
+                }}
+              >
+                {item.titleContent}
+              </p>
             </div>
-            <div className={styles["thumbnailTitle"]}>
-              <span>{item.title}</span>
-            </div>
+            <button className={styles["button"]}>
+              <span>Xem thêm</span>
+              <KeyboardDoubleArrowRightIcon />
+            </button>
           </div>
         ))}
       </div>

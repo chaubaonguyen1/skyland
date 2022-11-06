@@ -1,7 +1,8 @@
 .container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 200px;
   width: 100%;
   height: 80px;
   background-color: white;
@@ -9,9 +10,20 @@
     display: flex;
     align-items: center;
     gap: 30px;
+    font-weight: bold;
   }
   .logoWrapper {
     display: flex;
-    
+  }
+  .phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    gap: 5px;
+  }
+  .phone:hover {
+    opacity: 0.8;
+    gap: 5px;
   }
 }

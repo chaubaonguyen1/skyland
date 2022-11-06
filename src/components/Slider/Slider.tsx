@@ -2,17 +2,18 @@ import { ArrowLeftOutlined, ArrowRightOutlined } from "@mui/icons-material";
 import { useState } from "react";
 import { SliderItems } from "../../data";
 import styles from "./slider.module.scss";
+import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
 const Slider = () => {
   const [slideIndex, setSlideIndex] = useState<number>(0);
 
   const handleSlide = (direction: string) => {
     if (direction === "left") {
-      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 1);
+      setSlideIndex(slideIndex > 0 ? slideIndex - 4 : 1);
     } else {
-      setSlideIndex(slideIndex < 1 ? slideIndex + 1 : 0);
+      setSlideIndex(slideIndex < 4 ? slideIndex + 1 : 0);
     }
   };
-
+  //kingland
   return (
     <div className={styles["container"]}>
       <div
@@ -30,6 +31,14 @@ const Slider = () => {
         >
           <div className={styles["slide"]}>
             <img className={styles["img"]} src={item.img} alt="" />
+            <div className={styles["textWrapper"]}>
+              <h3>{item.title}</h3>
+              <p>{item.introduction}</p>
+              <button className={styles["button"]}>
+                <span>Tìm hiểu ngay</span>
+                <KeyboardDoubleArrowRightIcon />
+              </button>
+            </div>
           </div>
         </div>
       ))}
