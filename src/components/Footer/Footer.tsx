@@ -1,5 +1,5 @@
 import styles from "./footer.module.scss";
-import logo from "../../assets/logo.jpg";
+import logo from "../../assets/logo-test.jpg";
 import footerBg from "../../assets/footer-bg.png";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -63,7 +63,7 @@ const Footer = () => {
             </span>
             <span>
               <ReplyIcon />
-             Chính sách & bảo mật
+              Chính sách & bảo mật
             </span>
             <span>
               <ReplyIcon />
@@ -78,15 +78,8 @@ const Footer = () => {
               Tin tức và sự kiện
             </span>
           </div>
-          <div className={styles["item"]} style={{ marginTop: "-16px" }}>
-            <img
-              src={logo}
-              alt="logo"
-              style={{ width: "160px", height: "160px" }}
-            />
-            <span style={{ fontWeight: "bold" }}>
-              CÔNG TY CỔ PHẦN ĐẦU TƯ ĐỊA ỐC SKY LAND
-            </span>
+          <div className={styles["item"]} style={{ marginTop: -20 }}>
+            <img src={logo} alt="logo" style={{ width: 210 }} />
             <span>
               <PlaceIcon />
               CÔNG TY CỔ PHẦN ĐẦU TƯ ĐỊA ỐC SKY LAND
@@ -104,42 +97,13 @@ const Footer = () => {
           </div>
         </div>
       </section>
+      <section className={styles["copyrightContainer"]}>
+        <div className={styles["copyright"]}>
+          Copyright @ 2022 by Skyland. All rights reservered. Powered by Skyland
+          Group
+        </div>
+      </section>
     </footer>
-    // <div
-    //   className={styles["container"]}
-    //   style={{ backgroundImage: `url(${footerBg})` }}
-    // >
-    //   <div className={styles["color"]}></div>
-    //   <div className={styles["itemWrapper"]}>
-    //     <div className={styles["item"]}>
-    //       <h3>CAM KẾT TỪ SKYLAND</h3>
-    //       <span>Thông Tin Chính Xác Và Cập Nhật Mới Nhất</span>
-    //       <span>Hỗ Trợ Tư Vấn Phù Hợp Nhu Cầu Khách Hàng</span>
-    //       <span>Không Phát Sinh Bất Kỳ Chi Phí Phụ Thu Nào</span>
-    //       <span>Hỗ Trợ Trước Và Sau Bán Tới Khi Khách Hài Lòng</span>
-    //       <span>Hỗ Trợ Tham Quan Thực Tế Dự Án Miễn Phí</span>
-    //     </div>
-    //     <div className={styles["item"]}>
-    //       <h3>CÁC DỰ ÁN HOT MỚI NHẤT</h3>
-    //       <span>Dự án Skyland 1</span>
-    //       <span>Dự án Skyland 1</span>
-    //       <span>Dự án Skyland 1</span>
-    //       <span>Dự án Skyland 1</span>
-    //       <span>Dự án Skyland 1</span>
-    //     </div>
-    //     <div className={styles["item"]}>
-    //       <h3>LIÊN HỆ VỚI CHÚNG TÔI</h3>
-    //       <img
-    //         src={logo}
-    //         alt="logo"
-    //         style={{ width: "290px", height: "240px" }}
-    //       />
-    //       <span> Hotline Tư Vấn 24/24 : 09436 25 266</span>
-    //       <span>Email : truongskyland3333@gmail.com</span>
-    //       <span>Website : www.skyland.com.vn</span>
-    //     </div>
-    //   </div>
-    // </div>
   );
 };
 

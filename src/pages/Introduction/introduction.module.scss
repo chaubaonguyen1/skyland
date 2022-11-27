@@ -11,8 +11,8 @@
       justify-content: center;
       align-items: center;
       max-width: 100%;
-      background-color: rgb(51, 167, 181);
-      color: white;
+      color: #f5ab00;
+      font-weight: 700;
     }
     .content {
       padding-left: 30px;
@@ -20,13 +20,20 @@
       padding-top: 30px;
       padding-bottom: 30px;
       margin-top: 16px;
-      background-color: #f1f1f1;
+      background-color: #ffffff;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       gap: 30px;
       font-size: 18px;
       line-height: 1.6;
+      .imgWrapper {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-style: italic;
+        gap: 5px;
+      }
     }
   }
 }

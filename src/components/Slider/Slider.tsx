@@ -8,9 +8,9 @@ const Slider = () => {
 
   const handleSlide = (direction: string) => {
     if (direction === "left") {
-      setSlideIndex(slideIndex > 0 ? slideIndex - 4 : 1);
+      setSlideIndex(slideIndex > 0 ? slideIndex - 5 : 1);
     } else {
-      setSlideIndex(slideIndex < 4 ? slideIndex + 1 : 0);
+      setSlideIndex(slideIndex < 5 ? slideIndex + 1 : 0);
     }
   };
   //kingland

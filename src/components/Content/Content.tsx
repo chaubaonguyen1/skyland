@@ -1,7 +1,8 @@
 import styles from "./content.module.scss";
 import SpaOutlinedIcon from "@mui/icons-material/SpaOutlined";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
-import { data } from "./data";
+import { data } from "../../commons/data";
+import { Link } from "react-router-dom";
 
 export const Content = () => {
   return (
@@ -14,7 +15,7 @@ export const Content = () => {
       </div>
       <div className={styles["itemWrapper"]}>
         {data.map((item) => (
-          <div className={styles["item"]}>
+          <div className={styles["item"]} key={item.id}>
             <img src={item.thumbnailImg} alt="" />
             <div className={styles["previewContent"]}>
               <h3 style={{ fontSize: 22 }}>{item.title.toUpperCase()}</h3>
@@ -29,7 +30,12 @@ export const Content = () => {
               </p>
             </div>
             <button className={styles["button"]}>
-              <span>Xem thêm</span>
+              <Link
+                to={`/${item.link}`}
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                <span>Xem thêm</span>
+              </Link>
               <KeyboardDoubleArrowRightIcon />
             </button>
           </div>

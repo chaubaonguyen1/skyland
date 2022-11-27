@@ -11,34 +11,45 @@ const Introduction = () => {
         <div className={styles["hr"]}></div>
         <div className={styles["wrapper"]}>
           <div className={styles["title"]}>
-            <h4>GIỚI THIỆU</h4>
+            <h2>GIỚI THIỆU VỀ SKYLAND</h2>
           </div>
           <div className={styles["content"]}>
             <p>
-              Hơn 10 năm kinh nghiệm trong lĩnh vực bất động sản toàn quốc,
-              skyland.com.vn được thành lập với mục tiêu đem đến các giá trị đầu
-              tư tiềm năng cho quý khách hàng. Từ những khó khăn, thử thách đã
-              trải qua, nay Sky Land hoàn thiện được kĩ năng cũng như chiến lược
-              hướng đến sự pnhát triển lâu dài
+              Có nhiều năm kinh nghiệm và gặt hái nhiều thành công trong lĩnh
+              vực đầu tư và môi giới Bất Động Sản. Công ty Cổ Phần Đầu Tư Địa Ốc
+              Sky Land được thành lập với mục tiêu đem đến các giá trị đầu tư
+              tiềm năng cho quý khách hàng. Từ những khó khăn, thử thách đã trải
+              qua, nay SKY LAND đã hoàn thiện được kỹ năng cũng như chiến lược
+              hướng đến sự phát triển lâu dài.
             </p>
             <p>
-              Với đội ngũ trẻ năng động bao gồm các lãnh đạo tầng lớp trung niên
-              với kinh nghiệm dày dạn, đội ngũ chuyên viên thế hệ trẻ với nhiều
-              nhiệt huyết. Sky Land tự tin đem đến cho quý khách hàng những sản
-              phẩm dự án Vinhomes bất động sản chất lượng. Dịch vụ môi giới với
-              các chuyên viên được đào tạo chuyên sâu.
+              Với ước mơ cùng niềm đam mê trở thành công ty phát triển Bất Động
+              Sản tốt nhất Việt Nam, cung cấp sản phẩm và dịch vụ ưu việt, SKY
+              LAND bao gồm các Lãnh đạo tầng lớp trung niên với kinh nghiệm dày
+              dạn, đội ngũ chuyên viên thế hệ trẻ với nhiều nhiệt huyết, SKY
+              LAND tự tin đem đến cho quý khách hàng những sản phẩm dự án Bất
+              Động Sản chất lượng, dịch vụ chăm sóc khách hàng với các chuyên
+              viên được đào tạo chuyên sâu.
             </p>
-            <img src={companyImg} alt="" />
+            <div className={styles["imgWrapper"]}>
+              <img src={companyImg} alt="" />
+              Tập thể đội ngũ Skyland
+            </div>
             <p>
-              Chúng tôi luôn tự tâm niệm rằng lợi ích khách hàng là trên hết và
-              là yếu tố tồn tại lâu dài cho toàn thể đội ngũ, cho nên sự hài
-              lòng về dịch vụ cũng như hiệu quả giá trị đầu tư mà các dự án bất
-              động sản đem lại cho quý khách hàng được chúng tôi chăm sóc triệt
-              để.
+              Chúng tôi luôn tự tâm niệm rằng lợi ích của khách hàng là trên hết
+              và là yếu tố tồn tại lâu dài cho toàn thể đội ngũ, cho nên sự hài
+              lòng về dịch vụ cũng như hiệu quả giá trị đầu tư mà các dự án Bất
+              Động Sản đem lại cho quý khách hàng được chúng tôi chăm sóc tận
+              tâm.
             </p>
             <p>
-              Phương châm hoạt động của đội ngũ Sky Land xoay quanh các giá trị
-              cốt lõi sau :
+              Phương châm hoạt động của đội ngũ SKY LAND luôn đảm bảo những tiêu
+              chí sau:
+            </p>
+            <p>
+              SKY LAND luôn nỗ lực không ngừng trong mọi hoàn cảnh để khẳng định
+              và nâng cao vị thế của mình trên thị trường Bất Động Sản Việt Nam,
+              giữ vững niềm tin trong tâm trí khách hàng và đối tác.
             </p>
             <p>
               <strong>Chuyên môn cá nhân</strong> : kĩ năng chuyên môn và đạo
@@ -70,8 +81,8 @@ const Introduction = () => {
             <p>
               <strong>Các dịch vụ mà Sky Land cung cấp bao gồm</strong> : kinh
               doanh bất động sản, môi giới nhà đất, định giá bất động sản, tư
-              vấn chuyên sâu dự án khác, đấu giá bất động sản và quản lý quảng
-              cáo bất động sản.
+              vấn chuyên sâu dự án khác, đấu giá bất động sản và quản lý bất
+              động sản.
             </p>
           </div>
         </div>
