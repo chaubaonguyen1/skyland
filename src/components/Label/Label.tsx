@@ -9,31 +9,36 @@ const Content = () => {
       <div className={styles["itemWrapper"]}>
         <div className={styles["item"]}>
           <StackedLineChartIcon style={{ fontSize: 55 }} />
-          <h2>Tầm nhìn</h2>
+          <h2>TẦM NHÌN</h2>
           <span>
-            Được thành lập vào ngày 22/10/2021, Công ty Cổ Phần Đầu tư Địa ốc
-            SKY LAND đã chính thức đi vào hoạt động được hơn 1 năm trong lĩnh
-            vực đầu tư và môi giới bất động sản.
+            Trở thành công ty Cổ phần đầu tư Địa ốc hàng đầu tại Việt Nam. Trong
+            chiến lược dài hạn, SKY LAND luôn nỗ lực không ngừng, phát triển
+            mạnh mẽ để trở thành Nhà đầu tư – Phát triển bất động sản hàng đầu
+            tại Việt Nam, là cầu nối tin cậy giữa khách hàng và lợi nhuận, đem
+            lại những sản phẩm bất động sản có giá trị lợi nhuận cao.
           </span>
         </div>
         <div className={styles["item"]}>
           <BeenhereOutlinedIcon style={{ fontSize: 55 }} />
-          <h2>Sứ mệnh</h2>
+          <h2>SỨ MỆNH</h2>
           <span>
-            Mang đến niềm tin và hạnh phúc cho khách hàng từ giá trị thực tế.
-            Quy hoạch tại các vị trí chiến lược, kiến tạo cộng đồng nhân văn
-            tiên tiến với môi trường sống tiện nghi, hiện đại cho cư dân, góp
-            phần vào sự phát triển bền vững của toàn xã hội.
+            Mang đến niềm tin và hạnh phúc cho khách hàng từ những giá trị thực
+            tế. Quy hoạch tại các vị trí chiến lược, giúp khách hàng sở hữu
+            những Bất Động Sản để nâng tầm cuộc sống, kiến tạo cộng đồng nhân
+            văn tiên tiến với môi trường sống tiện nghi, hiện đại cho cư dân,
+            góp phần vào sự phát triển bền vững của toàn xã hội.
           </span>
         </div>
         <div className={styles["item"]}>
           <DiamondIcon style={{ fontSize: 55 }} />
-          <h2>Giá trị cốt lõi</h2>
+          <h2>GÍA TRỊ CỐT LÕI</h2>
           <span>
-            Hiệu quả – Chính trực – Chuyên nghiệp – Nhân văn Minh bạch và trung
-            thực để phát triển bền vững. Làm việc chuyên nghiệp, tận tâm, tôn
-            trọng khách hàng và nhà đầu tư, đối tác …Luôn đặt chữ Tín lên hàng
-            đầu để tạo dựng niềm tin.
+            Xây Uy Tín – Dựng Niềm Tin Để phát triển bền vững. SKY LAND làm việc
+            chuyên nghiệp, tận tâm, tông trọng khách hàng và đối tác cùng phát
+            triển… Luôn đặt chữ Tín lên hàng đầu để tạo dựng niềm tin Minh bạch
+            và trung thực để phát triển bền vững. Làm việc chuyên nghiệp, tận
+            tâm, tôn trọng khách hàng và nhà đầu tư, đối tác …Luôn đặt chữ Tín
+            lên hàng đầu để tạo dựng niềm tin.
           </span>
         </div>
       </div>

@@ -25,7 +25,10 @@
     gap: 30px;
     font-weight: bold;
     .dropdown {
+      display: flex;
+      align-items: center;
       position: relative;
+      cursor: pointer;
       .dropdownContent {
         position: absolute;
         display: flex;

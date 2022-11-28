@@ -5,6 +5,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { useLocation } from "react-router-dom";
 import { data } from "../../commons/data";
 import { useEffect } from "react";
+import YoutubeEmbed from "../../components/YoutubeEmbed/YoutubeEmbed";
 
 const BaiDaiPage = () => {
   const location = useLocation();
@@ -40,6 +41,7 @@ const BaiDaiPage = () => {
                   </span>
                 </div>
               ))}
+              <YoutubeEmbed embedId="LwKSJ7kfH8M"/>
               <ul className={styles["content"]}>
                 {item.content.map((itemContent, indexContent) => (
                   <li key={indexContent}>

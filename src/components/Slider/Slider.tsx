@@ -8,12 +8,11 @@ const Slider = () => {
 
   const handleSlide = (direction: string) => {
     if (direction === "left") {
-      setSlideIndex(slideIndex > 0 ? slideIndex - 5 : 1);
+      setSlideIndex(slideIndex > 0 ? slideIndex - 5 : 0);
     } else {
       setSlideIndex(slideIndex < 5 ? slideIndex + 1 : 0);
     }
   };
-  //kingland
   return (
     <div className={styles["container"]}>
       <div

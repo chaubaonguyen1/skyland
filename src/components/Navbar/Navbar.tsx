@@ -23,18 +23,8 @@ const Navbar = () => {
         </Link>
 
         <div className={styles["dropdown"]}>
-          <Link
-            to="/gioi-thieu"
-            style={{
-              textDecoration: "none",
-              color: "inherit",
-              display: "flex",
-              alignItems: "center",
-            }}
-          >
-            DỰ ÁN
-            <ExpandMoreIcon />
-          </Link>
+          DỰ ÁN
+          <ExpandMoreIcon />
           <div className={styles["dropdownContent"]}>
             <Link
               to="/dat-nen-phu-tho"

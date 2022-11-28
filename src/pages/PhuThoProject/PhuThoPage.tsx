@@ -5,6 +5,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { data } from "../../commons/data";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import YoutubeEmbed from "../../components/YoutubeEmbed/YoutubeEmbed";
 
 const PhuThoPage = () => {
   const location = useLocation();
@@ -39,6 +40,7 @@ const PhuThoPage = () => {
                   </span>
                 </div>
               ))}
+              <YoutubeEmbed embedId="2WZTpnqI92o"/>
               <ul className={styles["content"]}>
                 {item.content.map((itemContent, index) => (
                   <li key={index}>

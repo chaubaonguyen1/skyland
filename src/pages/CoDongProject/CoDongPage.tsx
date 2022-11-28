@@ -5,6 +5,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { data } from "../../commons/data";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import YoutubeEmbed from "../../components/YoutubeEmbed/YoutubeEmbed";
 
 const CoDongPage = () => {
   const location = useLocation();
@@ -37,6 +38,7 @@ const CoDongPage = () => {
                   <span style={{textAlign: 'center', fontStyle: 'italic'}}>Hình ảnh thực tế tại dự án</span>
                 </div>
               ))}
+              <YoutubeEmbed embedId="AxWQB0bbSNg"/>
               <ul className={styles["content"]}>
                 {item.content.map((itemContent) => (
                   <li>

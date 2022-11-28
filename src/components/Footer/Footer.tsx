@@ -33,7 +33,7 @@ const Footer = () => {
         <div className={styles["color"]}></div>
         <div className={styles["items"]}>
           <div className={styles["item"]}>
-            <h3>CAM KẾT TỪ SKYLAND</h3>
+            <h3>CAM KẾT TỪ SKY LAND</h3>
             <span>
               <CheckCircleOutlineIcon className={styles["icon"]} />
               Thông Tin Chính Xác Và Cập Nhật Mới Nhất
@@ -59,7 +59,7 @@ const Footer = () => {
             <h3>THÔNG TIN VỀ CÔNG TY</h3>
             <span>
               <ReplyIcon />
-              Về Công Ty Skyland
+              Về Công Ty Sky Land
             </span>
             <span>
               <ReplyIcon />
@@ -88,19 +88,20 @@ const Footer = () => {
               <SubtitlesIcon /> Mã số thuế: 0109788325
             </span>
             <span>
-              <MailOutlineIcon /> diaocskyland@gmail.com
+              <MailOutlineIcon />
+              Email: diaocskyland@gmail.com
             </span>
             <span>
               <PhoneInTalkIcon />
-              0767.499.458
+              Hotline: 0767.499.458
             </span>
           </div>
         </div>
       </section>
       <section className={styles["copyrightContainer"]}>
         <div className={styles["copyright"]}>
-          Copyright @ 2022 by Skyland. All rights reservered. Powered by Skyland
-          Group
+          Copyright @ 2022 by Sky land. All rights reservered. Powered by Sky
+          land Group
         </div>
       </section>
     </footer>
