@@ -3,6 +3,7 @@ import { useState } from "react";
 import { SliderItems } from "../../data";
 import styles from "./slider.module.scss";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
+import { Link } from "react-router-dom";
 const Slider = () => {
   const [slideIndex, setSlideIndex] = useState<number>(0);
 
@@ -34,7 +35,12 @@ const Slider = () => {
               <h3>{item.title}</h3>
               <p>{item.introduction}</p>
               <button className={styles["button"]}>
-                <span>Tìm hiểu ngay</span>
+                <Link
+                  to={item.link}
+                  style={{ textDecoration: "none", color: "inherit" }}
+                >
+                  <span>Tìm hiểu ngay</span>
+                </Link>
                 <KeyboardDoubleArrowRightIcon />
               </button>
             </div>
