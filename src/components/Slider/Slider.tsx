@@ -36,7 +36,7 @@ const Slider = () => {
               <p>{item.introduction}</p>
               <button className={styles["button"]}>
                 <Link
-                  to={item.link}
+                  to={`/${item.link}`}
                   style={{ textDecoration: "none", color: "inherit" }}
                 >
                   <span>Tìm hiểu ngay</span>
