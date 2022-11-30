@@ -60,17 +60,17 @@ const Hiring = () => {
             <p style={{ fontWeight: "bold" }}>YÊU CẦU ỨNG VIÊN:</p>
             <p className={styles["pText"]}>
               <CheckIcon />
-              Môi trường làm việc trẻ trung, năng động, chuyên nghiệp, đoàn kết.
-            </p>
-            <p className={styles["pText"]}>
-              <CheckIcon />
               Có niềm đam mê với kinh doanh, nhiệt huyết, cầu tiến trong công
-              việc.
+              việc
             </p>
             <p className={styles["pText"]}>
               <CheckIcon />
               Có khát vọng làm giàu, không ngại thử thách bản thân với nghề Bất
               Động Sản.
+            </p>
+            <p className={styles["pText"]}>
+              <CheckIcon />
+              Đồng hành cùng SKY LAND với chiến lược dài hạn.
             </p>
             <p style={{ fontWeight: "bold" }}>CHẾ ĐỘ ĐÃI NGỘ:</p>
             <p className={styles["secondPText"]}>
