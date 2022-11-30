@@ -28,9 +28,34 @@
       text-align: center;
       font-weight: 700;
       line-height: 1.6rem;
+      .icon {
+        font-size: 55px;
+      }
       ol {
         margin-left: 15px;
         margin-right: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .introContainer {
+    width: 100%;
+    height: auto;
+    background-color: rgba(245, 245, 118, 0.763);
+    // background-color: #f5ad07;
+    background-image: none;
+
+    .itemWrapper {
+      max-width: 480px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .item {
+        .icon {
+          font-size: 45px;
+        }
       }
     }
   }

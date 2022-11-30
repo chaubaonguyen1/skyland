@@ -23,7 +23,7 @@ const CoDongPage = () => {
       <Navbar />
       <div className={styles["itemContainer"]}>
         {data
-          .filter((item) => item.id === 2)
+          .filter((item) => item.id === 4)
           .map((item) => (
             <>
               <div className={styles["itemTitle"]}>{item.title}</div>

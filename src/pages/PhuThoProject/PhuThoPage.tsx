@@ -23,7 +23,7 @@ const PhuThoPage = () => {
       <Navbar />
       <div className={styles["itemContainer"]}>
         {data
-          .filter((item) => item.id === 4)
+          .filter((item) => item.id === 2)
           .map((item, index) => (
             <>
               <div className={styles["itemTitle"]}>{item.title}</div>

@@ -1,14 +1,9 @@
 import codong1 from "../assets/du-an-co-dong/codong1.jpg";
 import codong2 from "../assets/du-an-co-dong/codong2.jpg";
 import codong3 from "../assets/du-an-co-dong/codong3.jpg";
-import phutho1 from "../assets/du-an-phu-tho/phutho1.jpg";
-import phutho2 from "../assets/du-an-phu-tho/phutho2.jpg";
-import phutho3 from "../assets/du-an-phu-tho/phutho3.jpg";
-import phutho4 from "../assets/du-an-phu-tho/phutho4.jpg";
-import phutho5 from "../assets/du-an-phu-tho/phutho5.jpg";
-import phutho6 from "../assets/du-an-phu-tho/phutho6.jpg";
-import phutho7 from "../assets/du-an-phu-tho/phutho7.jpg";
-import phutho8 from "../assets/du-an-phu-tho/phutho8.jpg";
+import phutho9 from "../assets/du-an-phu-tho/phutho9.jpg";
+import phutho10 from "../assets/du-an-phu-tho/phutho10.jpg";
+import phutho11 from "../assets/du-an-phu-tho/phutho11.jpg";
 import yenmy1 from "../assets/du-an-yen-my/yenmy1.jpg";
 import yenmy2 from "../assets/du-an-yen-my/yenmy2.jpg";
 import yenmy3 from "../assets/du-an-yen-my/yenmy3.jpg";
@@ -39,8 +34,7 @@ export const data: {
     imgUrl: [baidai2, baidai3],
     title: "Đất nền Bãi Dài",
     titleContent: `
-    Phát triển cùng với khu Đô thị sinh thái và đón sóng Siêu dự án Đô thị Đại học Quốc Gia Hà Nội cơ sở tại Hòa Lạc.
-    Đất nền Bãi Dài tự tin trở thành nước cờ đầu tư sinh lời số 1 tại Hòa Lạc.`,
+    Phát triển cùng với khu Đô thị sinh thái và đón sóng Siêu dự án Đô thị Đại học Quốc Gia Hà Nội cơ sở tại Hòa Lạc. Đất nền Bãi Dài trở thành nước cờ đầu tư sinh lời số 1 tại thị trường Hòa Lạc được các nhà đầu tư săn đón.`,
     content: [
       "Vị trí: Bãi Dài, xã Tiến Xuân, huyện Thạch Thất, Hà Nội.",
       "Với vị trí độc tôn, nằm trên trục huyết mạch của lõi Đô thị sinh thái.",
@@ -56,8 +50,8 @@ export const data: {
   },
   {
     id: 2,
-    thumbnailImg: phutho1,
-    imgUrl: [phutho2, phutho3, phutho4, phutho5, phutho6, phutho7, phutho8],
+    thumbnailImg: phutho9,
+    imgUrl: [phutho9, phutho10, phutho11],
     title: "Đất nền Phú Thọ",
     titleContent: `Nắm bắt được sức nóng của thị trường bất động sản và tiềm năng phát triển mạnh mẽ khi nằm giữa 2 khu Công Nghiệp Tam Nông và khu Công Nghiệp Trung Hà – Phú Thọ, SKY LAND mang đến cho quý anh chị nhà đầu tư quỹ đất vô cùng tiềm năng: “Đất nền Phú Thọ”.`,
     content: [

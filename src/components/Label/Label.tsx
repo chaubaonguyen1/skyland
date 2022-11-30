@@ -8,7 +8,7 @@ const Content = () => {
     <div className={styles["introContainer"]}>
       <div className={styles["itemWrapper"]}>
         <div className={styles["item"]}>
-          <StackedLineChartIcon style={{ fontSize: 55 }} />
+          <StackedLineChartIcon className={styles["icon"]} />
           <h2>TẦM NHÌN</h2>
           <span>
             Trở thành công ty Cổ phần đầu tư Địa ốc hàng đầu tại Việt Nam. Trong
@@ -19,7 +19,7 @@ const Content = () => {
           </span>
         </div>
         <div className={styles["item"]}>
-          <BeenhereOutlinedIcon style={{ fontSize: 55 }} />
+          <BeenhereOutlinedIcon className={styles["icon"]} />
           <h2>SỨ MỆNH</h2>
           <span>
             Mang đến niềm tin và hạnh phúc cho khách hàng từ những giá trị thực
@@ -30,15 +30,14 @@ const Content = () => {
           </span>
         </div>
         <div className={styles["item"]}>
-          <DiamondIcon style={{ fontSize: 55 }} />
-          <h2>GÍA TRỊ CỐT LÕI</h2>
+          <DiamondIcon className={styles["icon"]} />
+          <h2>GIÁ TRỊ CỐT LÕI</h2>
           <span>
-            Xây Uy Tín – Dựng Niềm Tin Để phát triển bền vững. SKY LAND làm việc
-            chuyên nghiệp, tận tâm, tông trọng khách hàng và đối tác cùng phát
-            triển… Luôn đặt chữ Tín lên hàng đầu để tạo dựng niềm tin Minh bạch
-            và trung thực để phát triển bền vững. Làm việc chuyên nghiệp, tận
-            tâm, tôn trọng khách hàng và nhà đầu tư, đối tác …Luôn đặt chữ Tín
-            lên hàng đầu để tạo dựng niềm tin.
+            Xây Uy Tín – Dựng Niềm Tin, để phát triển bền vững SKY LAND làm việc
+            chuyên nghiệp, tận tâm, tôn trọng khách hàng và đối tác cùng phát
+            triển… Luôn đặt chữ Tín lên hàng đầu để tạo dựng niềm tin. Khát vọng
+            học hỏi và cống hiến cho sự phát triển của bản thân, khách hàng,
+            đồng nghiệp.
           </span>
         </div>
       </div>

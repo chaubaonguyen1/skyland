@@ -1,3 +1,6 @@
+$items: 4;
+$transition-duration: 0.5s;
+$transition-delay: 0.05s;
 @keyframes rotateMenu {
   0% {
     transform: rotateX(-90deg);
@@ -10,62 +13,150 @@
   }
 }
 
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 200px;
-  width: 100%;
-  height: 80px;
-  background-color: white;
-  color: #df0024;
-  .wrapper {
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.navbarContainer {
+  width: 100vw;
+  .container {
     display: flex;
     align-items: center;
-    gap: 30px;
-    font-weight: bold;
-    .dropdown {
+    justify-content: center;
+    gap: 200px;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    color: #df0024;
+    .wrapper {
       display: flex;
       align-items: center;
-      position: relative;
-      cursor: pointer;
-      .dropdownContent {
-        position: absolute;
+      gap: 30px;
+      font-weight: bold;
+      .dropdown {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        top: 40px;
-        width: 150px;
-        gap: 20px;
-        background-color: white;
-        transition: all 0.5s ease;
-        color: #df0024;
-        opacity: 0;
-        z-index: 999;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 5px;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        .dropdownContent {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          top: 40px;
+          width: 150px;
+          gap: 20px;
+          background-color: white;
+          transition: all 0.5s ease;
+          color: #df0024;
+          opacity: 0;
+          z-index: 999;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-left: 5px;
+        }
+      }
+      .dropdown:hover > .dropdownContent {
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .dropdownContent > a:hover {
+        // background-color: rgb(180, 176, 176);
+        opacity: 0.7;
       }
     }
-    .dropdown:hover > .dropdownContent {
+    .logoWrapper {
       display: flex;
-      opacity: 1;
-      transform: translateY(0);
+      overflow: hidden;
+    }
+    .phone {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      gap: 5px;
+    }
+    .phone:hover {
+      opacity: 0.8;
+      gap: 5px;
     }
   }
-  .logoWrapper {
-    display: flex;
-    overflow: hidden;
+  .mobileContainer {
+    display: none;
   }
-  .phone {
+}
+
+@media (max-width: 480px) {
+  .navbarContainer {
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    gap: 5px;
-  }
-  .phone:hover {
-    opacity: 0.8;
-    gap: 5px;
+    .container {
+      display: none;
+    }
+    .mobileContainer {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      width: 100%;
+      height: 36px;
+      .navbarButton {
+        font-size: 28px;
+        flex: 1;
+        display: flex;
+        flex-direction: row-reverse;
+        color: #df0024;
+      }
+      .logoWrapper {
+        flex: 1;
+      }
+      .inputChecked:checked ~ .navMobileWrapper {
+        transform: translateX(0%);
+      }
+      .inputChecked:checked ~ .navbarButton {
+        display: none;
+        animation: fadeIn 0.5s ease-in;
+      }
+    }
+    .navMobileWrapper {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 45%;
+      max-width: 100%;
+      background-color: #fff;
+      transform: translateX(100%);
+      transition: transform linear 0.5s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100vh;
+      .navList {
+        margin-top: 40px;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 20px;
+        font-weight: bold;
+        color: #df0024;
+        font-size: 14px;
+      }
+      .navCloseButton {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 5px;
+        margin-right: 5px;
+        font-size: 24px;
+        color: #df0024;
+      }
+    }
   }
 }

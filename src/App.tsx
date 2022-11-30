@@ -8,6 +8,7 @@ import CoDongPage from "./pages/CoDongProject/CoDongPage";
 import TanXaPage from "./pages/TanXaProject/TanXaPage";
 import YenMyPage from "./pages/YenMyProject/YenMyPage";
 import PhucTienPage from "./pages/PhucTienProject/PhucTienPage";
+import Hiring from "./pages/Hiring/Hiring";
 function App() {
   return (
     <div className="App">
@@ -21,6 +22,7 @@ function App() {
           <Route path="dat-nen-tan-xa" element={<TanXaPage />} />
           <Route path="dat-nen-yen-my" element={<YenMyPage />} />
           <Route path="dat-nen-phuc-tien" element={<PhucTienPage />} />
+          <Route path="tuyen-dung" element={<Hiring />} />
         </Routes>
       </BrowserRouter>
     </div>

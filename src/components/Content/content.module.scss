@@ -44,7 +44,7 @@
       flex-direction: column;
       justify-content: space-between;
       border: 1px solid #f5ab00;
-      transition: transform .2s;
+      transition: transform 0.2s;
       .previewContent {
         display: flex;
         flex-direction: column;
@@ -60,7 +60,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgba(253,153,39,0.5);
+        background-color: rgba(253, 153, 39, 0.5);
         border-radius: 8px;
         border-style: none;
         box-sizing: border-box;
@@ -92,6 +92,35 @@
     .item:hover {
       transform: scale(1.05);
       // opacity: 0.8;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    h2 {
+      font-size: 26px;
+      text-align: center;
+    }
+    .line {
+      .hr {
+        width: 100%;
+      }
+    }
+    .itemWrapper {
+      display: flex;
+      flex-direction: column;
+      max-width: fit-content;
+      flex-wrap: nowrap;
+      gap: 40px;
+      .item {
+        width: 100%;
+        background-color: rgba(245, 171, 0, 0.9);
+      }
+      .item:hover {
+        transform: none;
+      }
     }
   }
 }

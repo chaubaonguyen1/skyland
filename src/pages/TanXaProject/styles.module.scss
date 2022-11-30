@@ -44,3 +44,18 @@
     }
   }
 }
+
+
+
+@media (max-width: 480px) {
+  .itemContainer {
+    width: 100%;
+    .itemTitle {
+      // text-align: center;
+      justify-content: center;
+    }
+    .textContent {
+      text-align: center;
+    }
+  }
+}

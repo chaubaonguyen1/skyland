@@ -4,7 +4,7 @@
   margin-right: auto;
   .wrapper {
     margin-top: 24px;
-    color: #004835;;
+    color: #004835;
     .title {
       height: 42px;
       display: flex;
@@ -27,6 +27,16 @@
       gap: 30px;
       font-size: 18px;
       line-height: 1.6;
+      .pText {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+      .secondPText {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
       .imgWrapper {
         display: flex;
         flex-direction: column;
@@ -47,11 +57,21 @@
   .container {
     width: 100%;
     .wrapper {
+      .title {
+        font-size: 14px;
+        text-align: center;
+      }
       .content {
         padding-left: 0;
         padding-right: 0;
         p {
-          margin-left: 5px
+          text-align: center;
+        }
+        .pText {
+          align-items: unset;
+        }
+        .secondPText {
+          align-items: unset;
         }
       }
       .imgWrapper {
