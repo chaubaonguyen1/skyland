@@ -87,10 +87,6 @@ const Hiring = () => {
             </p>
             <p className={styles["secondPText"]}>
               <AddTaskIcon />
-              Thưởng nóng liên tục, bạn chỉ cần chăm chỉ.
-            </p>
-            <p className={styles["secondPText"]}>
-              <AddTaskIcon />
               Team building, thể dục thể thao, sinh nhật, thưởng lễ Tết..
             </p>
 
