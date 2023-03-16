@@ -100,10 +100,6 @@ const Hiring = () => {
               Ms. Hiền: 0906.247.988
             </p>
             <p className={styles["pText"]}>
-              <PhoneIcon />
-              Mr. Lộc: 0767.499.458
-            </p>
-            <p className={styles["pText"]}>
               <MailOutlineIcon />
               nhansuskyland.hn@gmail.com
             </p>
